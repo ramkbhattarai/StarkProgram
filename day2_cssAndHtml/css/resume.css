@@ -1,0 +1,121 @@
+html, head, body, div, span,img, h1, h3, ul, li{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font:inherit;
+    text-align: inherit;
+    text-decoration: inherit;
+    color: inherit;
+    background: transparent;
+}
+body{
+    background-color: thistle;
+}
+.head{
+    display: flex;
+}
+.links{
+    text-decoration: underline;
+    /* border:1px solid white; */
+    padding:20px;
+    /* margin: 0, 150px; */
+}
+.myphoto{
+    position: relative;
+    top: 2px;
+    width:150px;
+    border-radius: 100%;
+    margin-right:5px;
+    border: 1px solid white;
+}
+.info{
+    width:90%;
+}
+h1{
+    position: relative;
+    top:5px;
+    text-align: center;
+    font-size: 30px;
+}
+.contacts{
+    top:5px;
+    display: flex;
+    /* position: relative;
+    left: 20%; */
+    
+}
+.navbar{
+    background-color:rgb(209, 205, 198);
+    display: flex;
+    height: 50px;
+    
+}
+.inside_navbar{
+   
+    margin:20px;
+    padding: 3px, 10px;
+    position: relative;
+    left: 25%;
+    bottom:5px;
+     border-radius: 10%;
+}
+.inside_navbar a{
+    text-decoration: none;
+    font-size: 20px;
+   
+}
+.inside_navbar :hover{
+     border: 0px solid rgb(248, 246, 246);
+    background-color: rgb(192, 189, 189);  
+}
+
+h3{
+    text-align: center;
+    font-size: 30px;
+}
+ul{
+    display: block;
+}
+ul li{
+    width:10%;
+    font-size:20px;
+    padding: 10px,0;
+    position: relative;
+    left: 20%;
+}
+.projects{
+    display: flex;
+    position: relative;
+    left: 3%;
+    
+}
+img{
+    width:300px;
+}
+
+.body{
+    background-color: whitesmoke;
+} 
+header{
+    /* margin-top: 10px; */
+    padding-top:10px;
+}
+li{
+    margin: 10px;
+}
+
+ .gocamping{
+    margin:5px;
+}
+.menuitems{
+    margin:5px;
+    position: relative;
+    left:20%;
+} 
+
+.me{
+    position: relative;
+    left:10%;
+    font-size:20px;
+    font-style: italic; 
+}
