@@ -8,3 +8,22 @@ html, head, body, div, label, input{
     color: inherit;
     background: transparent;
 }
+.convertor{
+    border: 1px solid black;
+    width: 500px;
+    position: relative;
+    left: 25%;
+    top: 200px;
+}
+.temp{
+    display: flex;
+    border: 1px solid blueviolet;
+}
+.check{
+    margin-left: 10px;
+    padding-left: 10px;
+}
+.begin{
+    margin-left: 10px;
+    padding-left: 10px;
+}
