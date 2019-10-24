@@ -1,29 +1,31 @@
-let guess = document.getElementById("guess");
-    let box1 = `<div width="200px" border="1px solid black"><input id="check" type="number" border="1px solid black" placeholder="Type the number"></input></div>`;
-    let item = document.getElementById('guessing').appendChild(box1);
-    let num = Math.floor(Math.random() * 100);
-    let value = document.getElementById('check').value;
-    // let value = parseInt(val);
-    console.log(num);
+    let check = document.getElementById('check');
     let chance = 5;
-    while(chance){
-        if(num < value){
-            alert("Too High");
-        }else if(num > value){
-            alert("Too Low");
-        }else{
-            alert("Congratulations You guessed it");
-            break;
-        };
-         document.getElementById('guessing').appendChild(box1);
-        // let num = Math.floor(Math.random() * 100);
-         value = document.getElementById('check').value;
-        chance--;
-        guess.innerHTML = chance;
-        guess.style.color = 'red';
-    };
-    if(!chance){
+    let num = Math.floor(Math.random() * 100);
+    let div = document.getElementById('guessing');
+    let ele = document.createElement('h1');
+    div.appendChild(ele);
+    let span = document.getElementById('guess');
+    console.log(num);
+    let value;
+    check.addEventListener('change', () => {
+         value = check.value;
+         ele.innerHTML = 'Please Enter the number';
+        
+         if(value < num){
+             ele.innerHTML = 'too low';
+         }else if(value > num){
+             ele.innerHTML = 'too high';
+         }else {
+             ele.innerHTML = 'You guessed it';
+         }
+         chance--;
+         span.innerHTML = chance;
+         span.style.color = 'red';
+        if (!chance) {
+            ele.innerHTML = 'The number was ' + num;
+        }
+    });
 
-        alert("Sorry your chances are over.")
-        alert('The number was '+ num)
-    }
+    
+
+   
