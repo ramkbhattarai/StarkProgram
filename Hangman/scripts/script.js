@@ -15,7 +15,7 @@ let input = document.getElementById('input');
 let check = '';
 input.addEventListener('change', () =>{
     
-    let char = input.value;
+    let char = input.value.toLowerCase();
     check += char;
     input.value = "";
     if(word.includes(char)){

@@ -10,7 +10,7 @@
     check.addEventListener('change', () => {
          value = check.value;
          ele.innerHTML = 'Please Enter the number';
-        
+        check.value = "";
          if(value < num){
              ele.innerHTML = 'too low';
          }else if(value > num){
