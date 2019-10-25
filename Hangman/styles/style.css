@@ -1,0 +1,39 @@
+.game{
+    border: 1px solid black;
+    position: relative;
+    left: 35%;
+    margin-top: 10%;
+    width: 400px;
+    height: 300px;
+}
+#word{
+   font-size: 20px; 
+   margin: 5px;
+   /* padding-left: 5px; */
+   /* color: purple; */
+}
+.description{
+    margin: 5px;
+}
+.appear{
+    width:100%;
+}
+#image{
+    float: right;
+}
+#input{
+    border: 1px solid black;
+    margin: 5px;
+}
+
+#collection{
+    display: flex;
+    list-style-type: none;
+}
+#guessed{
+       display: flex;
+    list-style-type: none; 
+}
+li{
+    margin:2px;
+}

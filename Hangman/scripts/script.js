@@ -3,22 +3,24 @@ let index = Math.floor(Math.random() * words.length);
 let word = words[index];
 console.log(word);
 let wordLength = word.length;
+let num = document.getElementById('number').innerHTML = wordLength;
 let collection = document.getElementById('collection');
 let chances = 6;
 let strike = 0;
 for(let i =0; i < wordLength;i++){
     let ele = document.createElement('li');
     collection.append(ele);
-    ele.innerHTML = "_ "
+    ele.innerHTML = '__'  ;
 }
 let input = document.getElementById('input');
 let check = '';
 input.addEventListener('change', () =>{
     
     let char = input.value.toLowerCase();
-    check += char;
+    
     input.value = "";
     if(word.includes(char)){
+        check += char;
         for(let i = 0; i < word.length; i++){
             if(word[i] === char){
                 collection.children[i].innerHTML = char;
