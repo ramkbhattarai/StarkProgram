@@ -8,9 +8,12 @@
     </head>
     <body>
         <div id="word">Guess the word of <span id="number"></span> letters</div>
+        <div>You have <span id="length">6</span> remaining guesses.</div>
         <input type="text" id="input" placeholder="Type the letter here">
-        <div id="image" width="200px" height="200px"></div>
-        <div id='collection'></div>
+        <img id="image" src="./images/strike-0.png" width="200px" height="200px">
+        
+        <ul id='collection'></ul>
+        <div id="guessed">Your Guesses</div>
     </body>
 	
 	<script src= "./scripts/script.js"></script>
