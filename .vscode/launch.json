@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HomeTour",
+            "request": "launch",
+            "mainClass": "HomeTour.HomeTour",
+            "projectName": "RevatureOnlineClass_f4984fa3"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Local Node File",
+            "console": "integratedTerminal",
+            "program": "${file}"
+        },
+        {
+            "name": "Launch index.html",
+            "type": "chrome",
+            "request": "launch",
+            "file": "${workspaceFolder}/index.html"
+        }
+    ]
+}
